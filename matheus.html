@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chave de Re</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            font-size: 32px;
+            flex-direction: column;
+            gap: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <p style="width: 700px; text-align: center;">Na escuridão, sem luz pro sol, procure onde a claridade reside. No
+        canto onde a sombra não repousa, vive o segredo que o brilho revela</p>
+    <p>7+.!=|9${5>5$!1,.%74{4v=-{}0#{)5+=4-4,80[5:87{(7R,G:Bh</p>
+    
+    <div style="text-align: center;">
+        <p>Digite corretamente para receber sua resposta...</p>
+        <input type="text" id="inputSenha" placeholder="Escreva sua resposta">
+        <button type="submit" onclick="validarSenha()">Enviar</button>
+    </div>
+    <script>
+        function validarSenha() {
+            const senha = document.getElementById('inputSenha').value.trim().toLowerCase();
+            if (senha === 'senha') {
+                alert('Procure pela caixa de InsetNew ainda na garagem');
+            } else {
+                alert('Você errou, tente novamente');
+            }
+        }
+    </script>
+</body>
+
+</html>
